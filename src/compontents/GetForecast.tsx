@@ -25,7 +25,7 @@ class GetForecast extends React.Component {
       }
 
     componentDidMount() {
-        fetch('http://api.openweathermap.org/data/2.5/forecast?id=3165071&&units=metric&lang=it&appid=982b6cda4132c27cb66476f7c6ec76d0')
+        fetch('https://api.openweathermap.org/data/2.5/forecast?id=3165071&&units=metric&lang=it&appid=982b6cda4132c27cb66476f7c6ec76d0')
         .then((res) => {
             return res.json();
         })
