@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GetWeather from './compontents/GetWeather';
+import GetForecast from './compontents/GetForecast';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-body p-4 bg-background text-text min-h-screen">
+      <GetWeather/>
+      <h2 className="font-display text-3xl font-bold mb-2">Previsione</h2>
+      <GetForecast/>
     </div>
   );
 }
